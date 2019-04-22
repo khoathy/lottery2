@@ -1,0 +1,60 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        border: none;
+        padding: 1rem 1.8rem;
+        border-bottom-right-radius: 10px;
+        font-size: 1.6rem;
+        transition: all .2s;
+        cursor: pointer;
+    }
+    &:active,
+    &:focus {
+        outline: none;
+    }
+
+    @include respond(phone){
+        padding: 0.5rem 1rem;
+    }
+
+
+    &__full {
+        background-color: $color-primary-dark;
+        color: $color-white;
+
+        &:hover {
+            background-color: $color-primary;
+            
+        }
+    }
+    &__outline {
+        background-color: transparent;
+        border: solid 1px $color-primary-dark;
+        color: $color-primary-dark;
+        &:hover {
+            background-color: $color-primary-dark;
+            color: $color-white;
+            
+        }
+    }
+    &__tab {
+        margin: 0 5rem;
+    }
+
+}
+// .refresh {
+//     height: 1.2rem;
+//     padding-right : 0.8rem;
+// }
+// .btn__refresh {
+//     display: flex;
+//     align-items: center;
+//     padding: 0.5rem 1rem 0.6rem;
+//     color: $color-primary-dark;
+//     font-size: 1.3rem;
+//     margin-left: 3rem;    
+//     @include respond(phone){
+//         margin-left: 1rem;   
+//     }
+// }
