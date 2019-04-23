@@ -3,7 +3,7 @@
 // });
 
 //default Open currentPlayers
-document.getElementById("currentPlayers").click();
+document.getElementById("defaultTab").click();
   console.log('hi');
 
 function openTab(evt, btnName) {
